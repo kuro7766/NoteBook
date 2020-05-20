@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <top.androidman.SuperButton
+        android:id="@+id/super_btn_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:corner="@dimen/border_size"
+        android:background="@color/black">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:lines="4"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:id="@+id/tv_item"/>
+    </top.androidman.SuperButton>
+    <View
+        android:id="@+id/selecting_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selecting"/>
+    <View
+        android:id="@+id/response_click_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>
